@@ -1,0 +1,245 @@
+{
+  "items": [
+    {
+      "name": "Денис Тяглин",
+      "position": "Автор разработчик",
+      "avatar": "DenisTiaglin",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://www.instagram.com/denistiaglin.com_/",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Максим Первой",
+      "position": "Стартап менеджер",
+      "avatar": "MaksimPervoy",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://www.instagram.com/max_pervoy/",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Руслан Балаш",
+      "position": "Архитектор",
+      "avatar": "RuslanBalash",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://www.instagram.com/perfectura_design/",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Сергей Сидоров",
+      "position": "Прототипирование интерфейсов",
+      "avatar": "SergeySidorov",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://www.instagram.com/sidorov_s_n_/",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Андрей Хоменко",
+      "position": "ТОП мастер макетирования",
+      "avatar": "AndreyKhomenko",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://www.instagram.com/andre_svitsa/",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Юрий Жилавец",
+      "position": "ТОП мастер макетирования",
+      "avatar": "YuriZhilavets",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://www.instagram.com/zhilavets2018/",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Георгий Куманеев",
+      "position": "Стартап брокер",
+      "avatar": "GeorgyKumaneev",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://instagram.com/startup_broker?igshid=12mkiii8u748j",
+        "vk": ""
+      }
+    },
+
+    {
+      "name": "Юлианна Макарова",
+      "position": "Колл-центр",
+      "avatar": "YuliannaMakarova",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://instagram.com/ulianna.makarova?r=nametag",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Екатерина Кожаева",
+      "position": "Колл-центр",
+      "avatar": "EkaterinaKozhaeva",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://instagram.com/kat_rin.27?igshid=16p67lrn7ghce",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Игорь Макаров",
+      "position": "Макетчик",
+      "avatar": "IgorMakarov",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "https://www.facebook.com/profile.php?id=100006201195905",
+        "tw": "",
+        "te": "",
+        "inst": "",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Михаил Копониров",
+      "position": "Frontend разработчик",
+      "avatar": "MikhailKoponirov",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "https://www.facebook.com/people/Michael-Koponirov/100010910190950",
+        "tw": "",
+        "te": "",
+        "inst": "",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Дмитрий Красногор",
+      "position": "Директор по развитию бизнеса",
+      "avatar": "DmitryKrasnogor",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://instagram.com/dmitry_krasnogor_official?igshid=135fx5pz2ksdn",
+        "vk": ""
+      }
+    }
+  ]
+}
