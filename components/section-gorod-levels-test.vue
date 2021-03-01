@@ -169,7 +169,7 @@ export default {
   h1 {
     margin-top: 127px;
     word-wrap: break-word;
-    width: 220px;
+    width: 260px;
   }
   p {
     margin-top: 50px;
@@ -182,6 +182,7 @@ export default {
 .btns-block-wrapper {
   position: relative;
   margin-top: 35px;
+  height: 100%;
 }
 .btns-block {
   display: flex;

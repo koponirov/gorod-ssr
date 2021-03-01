@@ -1,12 +1,24 @@
-<template lang="pug">
-  .wrapper(:class='{open}' @click='open=!open')
-    .selected
-      img.img(:src="selectedLangImg")
-      span {{ $i18n.locale }}
-    ul.options
-      li.option(:key="locale.code" v-for='locale in availableLocales' )
-        img.img(:src="langsListImg")
-        nuxt-link( :to="switchLocalePath(locale.code)") {{ locale.name }}
+<template >
+  <div class="wrapper" :class="{open}" @click='open=!open'>
+    <div class="selected">
+      <img :src="require(`@/assets/img/language/${$i18n.locale}.png`)" class="img"/>
+      <span> {{ $i18n.locale }} </span>
+      <ul class="options">
+
+          <nuxt-link :to="switchLocalePath(locale.code)" :key="locale.code" v-for='locale in availableLocales'>
+            <li class="option" >
+              <img :src="require(`@/assets/img/language/${locale.code}.png`)" class="img"/>
+              {{ locale.name }}
+            </li>
+          </nuxt-link>
+
+      </ul>
+
+
+    </div>
+
+  </div>
+
 </template>
 
 <script>

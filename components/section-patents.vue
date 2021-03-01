@@ -1193,6 +1193,8 @@
         opacity: 0.9;
         color: #fff;
 
+
+
         &:before {
             content: "";
             position: absolute;
@@ -1211,11 +1213,13 @@
             display: block;
         }
 
-        svg {
+        img {
             position: absolute;
             top: 50%;
             left: 47%;
             transform: translate(-50%, -50%);
+            width: 30px;
+            height: 30px;
 
         }
     }

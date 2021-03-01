@@ -6,8 +6,8 @@
           .department-avatar-wrapper
             //img(:src="`/files/committee-img/support_big.jpg`" )
             img(:src="require(`@/assets/img/committee-img/support_big.jpg`)" )
-            .country-flag
-              svg-round-icon( name='online' :id="idx+'pc'" width="30" height="30" circleColor="2E303F")
+            .online
+              img.online-img(:src="require(`~/assets/icons/flags/online.svg`)" )
           .info
             .name-container
               p.name {{ $t('department') }}
@@ -16,8 +16,9 @@
         .avatar-wrapper
           //img(:src="`/files/committee-img/${items[idx][number].img}_big.jpg`")
           img(:src="require(`@/assets/img/committee-img/${items[idx][number].img}_big.jpg`)")
-          .country-flag
-            svg-round-icon(v-if="items[idx][number].country" :name='items[idx][number].country' :id="idx+'pc'" width="50" height="50" circleColor="2E303F")
+          .flag
+            img.flag-img(:src="iconPath" v-if="items[idx][number].country")
+            //svg-round-icon(v-if="items[idx][number].country" :name='items[idx][number].country' :id="idx+'pc'" width="50" height="50" circleColor="2E303F")
         .info
           .name-container
             p.name {{ items[idx][number].name }}
@@ -58,6 +59,12 @@ export default {
     SvgRoundIcon,
   },
   props: ['items', 'idx', 'number'],
+  computed: {
+    iconPath() {
+      let icon
+      return icon = require(`~/assets/icons/flags/${this.items[this.idx][this.number].country}.svg`);
+    },
+  },
   methods: {
     closeModal() {
       this.$emit('close-modal',  -1);
@@ -106,16 +113,24 @@ export default {
         width: 170px;
         height: 170px;
 
-        .country-flag {
+
+
+
+        .flag {
           position: absolute;
           bottom: 10px;
-          right: -20px;
-        }
-
-        .svg-icon {
-
+          right: -12px;
           width: 40px;
           height: 40px;
+          border-radius: 50%;
+
+          .flag-img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 100px;
+            box-shadow: 0 0 0 8px rgb(46, 48, 63), 0 0 13px #333;
+          }
         }
       }
 
@@ -124,17 +139,25 @@ export default {
         width: 140px;
         height: 140px;
 
-        .country-flag {
+        .online {
           position: absolute;
           bottom: 10px;
-          right: -10px;
+          right: -8px;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+
+          .online-img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 100px;
+            box-shadow: 0 0 0 5px rgb(46, 48, 63), 0 0 13px #333;
+          }
         }
 
-        .svg-icon {
 
-          width: 40px;
-          height: 40px;
-        }
+
       }
       .info {
         margin-left: 25px;

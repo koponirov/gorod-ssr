@@ -291,6 +291,10 @@ export default {
    margin: 1px;
    width: 98%;
    height: 60%;
+
+  svg {
+    display: none;
+  }
 }
 .name {
     font-size: 9px;

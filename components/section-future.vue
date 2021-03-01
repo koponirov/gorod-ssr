@@ -1,39 +1,41 @@
 <template lang="pug">
-section.future
+  section.future
+    scroll-view.sw(tag="div", :offset="0")
+      template(slot-scope="futurevisibility")
+        .container
+          h2.title(v-html="$t('futureTitle')")
+
+          .parts
+            .part
+              .dot
+              .line
+              p(v-html="$t('you')")
 
 
-      .container
-        h2.title {{ $t('futureTitle') }}
+            .part
+              x(:to="require('../assets/img/future/future-we.png')", :visible="futurevisibility.we" key="we")
+              .line
+              p(v-html="$t('we')")
 
-        .parts
-          .part
-            .dot
-            .line
-            p {{ $t('you') }}
+            .part
+              x.building(:to="require('../assets/img/future/future-building.png')", :visible="futurevisibility.building" key="building")
+              .line
+              p(v-html="$t('future')")
 
-          .part
-            //lazy-image(:to="require('../assets/img/future/future-we.png')", :visible="futurevisibility.we" key="we")
-            .line
-            p {{ $t('we') }}
-
-          .part
-            //lazy-image.building(:to="require('../assets/img/future/future-building.png')", :visible="futurevisibility.building" key="building")
-            .line
-            p {{ $t('future') }}
-
-        div.world
-          //lazy-image.future-world(:to="require('../assets/img/future/future-world.png')", :visible="futurevisibility.vw" key="vw")
-          h2.title(ref="investors", v-html="investors + ' ' + $t('peopleMultiple')")
-          p.subtitle {{ $t('alreadyBecome') }}
-          a.btn-blue.btn-grd(:href="ref") {{ $t('btnBeFuture') }}
+          div.world
+            x.future-world(:to="require('../assets/img/future/future-world.png')", :visible="futurevisibility.vw" key="vw")
+            h2.title(ref="investors", v-html="investors + ' ' + $t('peopleMultiple')")
+            p.subtitle(v-html="$t('alreadyBecome')")
+            a.btn-blue.btn-grd(:href="ref", v-html="$t('btnBeFuture')")
 </template>
 
 <script>
-//import LazyImage from './LazyImage'
+import X from './X'
+
 
 export default {
   components: {
-    //LazyImage
+    X,
   },
   data() {
     return {
@@ -46,28 +48,30 @@ export default {
   },
   methods: {
     getInvestors() {
-      fetch(window.origin + '/meta')
-        .then(res => res.json())
-        .then(res => {
-          console.log(res)
-          this.investors = res.user
-          localStorage.setItem("investors", res.user)
-        }).catch(e => {
-          this.investors = localStorage.getItem("investors") || 917
-        })
+      // fetch(window.origin + '/meta')
+      //   .then(res => res.json())
+      //   .then(res => {
+      //     console.log(res)
+      //     this.investors = res.user
+      //     localStorage.setItem("investors", res.user)
+      //   }).catch(e => {
+        this.investors = localStorage.getItem("investors") || 917
+      }
     }
-  },
+  ,
   mounted() {
     // this.login = this.$cookies.get('weter_ref')
     // if (this.login) this.ref += `?u=${this.login}`
     // const evl = window.addEventListener('scroll', _ => {
-    //     const top = this.$refs.investors.getBoundingClientRect().top;
-    //     this.showInvestors = top - 500 < window.innerHeight;
-    //     if (this.showInvestors && !this.loadedInvestors) {
-    //       this.getInvestors()
-    //       this.loadedInvestors = true
-    //     }
+    //   const top = this.$refs.investors.getBoundingClientRect().top;
+    //   this.showInvestors = top - 500 < window.innerHeight;
+    //   if (this.showInvestors && !this.loadedInvestors) {
+    //     this.getInvestors()
+    //     this.loadedInvestors = true
+    //   }
     // })
+
+
   }
 }
 </script>

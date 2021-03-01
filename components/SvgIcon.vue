@@ -1,8 +1,5 @@
 <template>
-  <svg :class="className" xmlns="http://www.w3.org/2000/svg">
-    <title v-if="title">{{ title }}</title>
-    <use :xlink:href="iconPath" xmlns:xlink="http://www.w3.org/1999/xlink"/>
-  </svg>
+  <img :src="iconPath" :alt="name"/>
 </template>
 
 <script>
@@ -10,10 +7,7 @@ export default {
   name: 'svg-icon',
 
   props: {
-    name: {
-      type: String,
-      required: true
-    },
+    name: { type: String, default: "image" },
 
     title: {
       type: String,
@@ -29,13 +23,14 @@ export default {
   computed: {
     iconPath() {
       let icon
-      if (this.f) icon = require(`@/assets/icons/flags/${this.name}.svg`);
-      else icon = require(`@/assets/icons/${this.name}.svg`);
+      if (this.f) icon = require(`~/assets/icons/flags/${this.name}.svg`);
+      else icon = require(`~/assets/icons/${this.name}.svg`);
 
-      if (Object.prototype.hasOwnProperty.call(icon, 'default')) {
-        icon = icon.default;
-      }
-      return icon.url;
+      return icon
+      // if (Object.prototype.hasOwnProperty.call(icon, 'default')) {
+      //   icon = icon.default;
+      // }
+      // return icon.url;
     },
 
     className() {

@@ -9,7 +9,8 @@
       //настоящие наблюдателм
       .watcher-img-wrapper(v-else)
         img.watcher-preview-img(:src="require(`@/assets/img/committee-img/${item.img}.jpg`)" alt="item.img")
-        svg-round-icon.flag(v-if="item.country" :name='item.country' :id="index+'cw'" width="25" height="25" circle-color="21202F")
+        div.flag(v-if="item.country" :name='item.country' :id="index+'cw'" width="25" height="25" circle-color="21202F")
+          img.flag-img(:src="iconPath")
 
       .watcher-info
         p.watcher-title(v-html="item.name")
@@ -17,14 +18,16 @@
 </template>
 
 <script>
-import SvgRoundIcon from './SvgRoundIcon';
 
 export default {
   name: "WhatcherCard",
-  components: {
-    SvgRoundIcon
-  },
   props: ["item", "index", "number"],
+  computed: {
+    iconPath() {
+      let icon
+      return icon = require(`~/assets/icons/flags/${this.item.country}.svg`);
+    },
+  },
   methods: {
     changeIdx() {
       this.$emit('change-idx', {index: this.index, number: this.number});
@@ -67,6 +70,19 @@ export default {
       position: absolute;
       right: -10px;
       bottom: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+
+      .flag-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px; /* Радиус скругления */
+        box-shadow: 0 0 0 5px #21202F, 0 0 13px #333; /* Параметры теней */
+        transition: box-shadow 50ms ease-in-out;
+      }
+
     }
   }
 
@@ -114,6 +130,18 @@ export default {
 
 .watcher-block:hover {
   background-color: #2f303f;
+  .watcher-img-wrapper {
+    .flag {
+
+        .flag-img {
+
+          box-shadow: 0 0 0 5px #2f303f, 0 0 13px #333; /* Параметры теней */
+        }
+
+
+
+    }
+  }
 }
 
 </style>

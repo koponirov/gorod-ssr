@@ -1,13 +1,9 @@
 <template>
-  <svg  :width="width" :height="height">
-    <defs>
-      <clipPath :id="id">
-        <circle :cx="width/2" :cy="height/2" :r="width/2.777" fill="#FFFFFF"></circle>
-      </clipPath>
-    </defs>
-    <circle :cx="width/2" :cy="height/2" :r="width/2" :fill="`#${circleColor}`"></circle>
-    <image :xlink:href="iconPath" width="100%" height="100%" :clip-path="`url(#${id})`"></image>
-  </svg>
+  <div class="wrapper">
+    <img :src="iconPath"  class="img" />
+  </div>
+
+
 </template>
 
 <script>
@@ -39,12 +35,14 @@ export default {
   computed: {
     iconPath() {
       let icon
-      icon = require(`@/assets/icons/flags/${this.name}.svg`);
+      return  icon = require(`~/assets/icons/flags/${this.name}.svg`);
 
-      if (Object.prototype.hasOwnProperty.call(icon, 'default')) {
-        icon = icon.default;
-      }
-      return icon.url;
+
+
+      // if (Object.prototype.hasOwnProperty.call(icon, 'default')) {
+      //   icon = icon.default;
+      // }
+      // return icon.url;
     },
 
     className() {
@@ -54,7 +52,22 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+  div {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    img.img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px; /* Радиус скругления */
+      box-shadow: 0 0 0 5px #21202F, 0 0 13px #333; /* Параметры теней */
+      transition: box-shadow 50ms ease-in-out;
+    }
+
+  }
+
   .svg-icon {
     /* fill: currentColor; */
     height: 24px;

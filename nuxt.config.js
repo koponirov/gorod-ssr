@@ -1,4 +1,4 @@
-import i18n from "../gorod-landing-ssr/config/i18n";
+import i18n from "../gorod-ssr/config/i18n";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -25,7 +25,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/youtube'
+    '@/plugins/youtube',
+    '@/plugins/scrollView',
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -33,6 +35,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    ["@nuxtjs/svg"],
     [
       'nuxt-i18n',
       {
@@ -69,6 +72,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -37,7 +37,7 @@ footer.footer
 
 <script>
     import SvgIcon from './SvgIcon'
-    //import ClickOutside from 'vue-click-outside'
+    import ClickOutside from 'vue-click-outside'
 
 
     export default {
@@ -95,7 +95,7 @@ footer.footer
 
         // do not forget this section
         directives: {
-            //ClickOutside
+            ClickOutside
         }
     }
 </script>
