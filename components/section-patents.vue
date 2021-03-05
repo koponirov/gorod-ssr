@@ -418,9 +418,9 @@
             let drawElectronY3_7 = electronY(34, 830, 34, 1146, 2, 12, 2, 15)
             let drawElectronY3_8 = electronY(34, 832, 34, 1148, 2, 15, 2, 45)
             let drawElectronY3_9 = electronY(34, 833, 34, 1150, 2, 8, 2, 85)
-            let drawElectronY3_10 = electronY(34, 1146, 34, 1546, 2, 12, 2, 148)
-            let drawElectronY3_11 = electronY(34, 1148, 34, 1548, 2, 15, 2, 247)
-            let drawElectronY3_12 = electronY(34, 1150, 34, 1550, 2, 8, 2, 368)
+            let drawElectronY3_10 = electronY(34, 1146, 34, 1396, 2, 12, 2, 148)
+            let drawElectronY3_11 = electronY(34, 1148, 34, 1418, 2, 15, 2, 247)
+            let drawElectronY3_12 = electronY(34, 1150, 34, 1450, 2, 8, 2, 368)
 
             //4 vertical line
             //4angle
@@ -747,7 +747,7 @@
                 ctx.lineTo(35, 830)
                 //2vertical
                 ctx.moveTo(35, 830)
-                ctx.lineTo(35, 1550)
+                ctx.lineTo(35, 1450)
 
                 //4 vertical line
                 //4angle

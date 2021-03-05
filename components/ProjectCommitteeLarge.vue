@@ -74,22 +74,29 @@ export default {
       setTimeout(() => {
         this.slideChanged = false
       }, 0)
+    },
+    check() {
+        const top = this.$refs.a.getBoundingClientRect().top;
+        this.show = top < window.innerHeight;
+        if (this.show && (!this.loaded || this.locale !== this.$i18n.locale)) {
+          this.getTeam()
+          this.loaded = true
+          this.locale = this.$i18n.locale
+        }
     }
   },
 
+
   mounted() {
+
     const top = this.$refs.a.getBoundingClientRect().top;
     this.show = top < window.innerHeight;
-    const evl = window.addEventListener('scroll', _ => {
-      const top = this.$refs.a.getBoundingClientRect().top;
-      this.show = top < window.innerHeight;
-      if (this.show && (!this.loaded || this.locale !== this.$i18n.locale)) {
-        this.getTeam()
-        this.loaded = true
-        this.locale = this.$i18n.locale
-      }
-    })
+    const evl = window.addEventListener('scroll', this.check)
+
   },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.check)
+  }
 }
 </script>
 <style lang="scss" scoped>

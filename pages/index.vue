@@ -23,7 +23,8 @@ import SectionTeam from "~~/components/section-project-team";
 import SectionCommittee from "~~/components/section-project-commitee";
 import SectionFuture from "~~/components/section-future";
 import SectionFooter from "~~/components/section-footer";
-
+import Vue from "vue";
+import VueCookies from "vue-cookies";
 
 
 export default {
@@ -37,7 +38,37 @@ export default {
     SectionCommittee,
     SectionFuture,
     SectionFooter
+  },
+  data() {
+    return {
+      redirect: '',
+      scriptPath: {
+        en: 'https://code.jivosite.com/widget/9dJyrHrlqN',
+        ru: 'https://code.jivosite.com/widget/Tv5TjbEYf1',
+        de: 'https://code.jivosite.com/widget/rZLKOyIJDm',
+        fr: 'https://code.jivosite.com/widget/GF30SYILvm'
+      }
+    }
+  },
+
+  mounted() {
+
+    const jivoScript = document.createElement('script')
+    jivoScript.async = true
+    jivoScript.type = "text/javascript"
+    jivoScript.src = this.scriptPath[this.$i18n.getLocaleCookie()]
+    document.head.appendChild(jivoScript)
+
+    jivoScript.onload = function () {
+      window.jivo_init()
+    }
+
+  },
+  destroyed() {
+    console.log('destr')
+    window.jivo_destroy()
   }
+
 }
 </script>
 

@@ -3,14 +3,16 @@ import i18n from "../gorod-ssr/config/i18n";
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'gorod-ssr',
+    title: 'GOROD',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Инвестируй в новые технологии на рынке градостроительства на выгодных для вас условиях' },
+      { name: 'keywords', content: 'gorod, город, инновация, патент, денис, тяглин, транспотно, логистическая, система' },
+      { property: "og:site_name", content: "GOROD" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -27,6 +29,7 @@ export default {
   plugins: [
     '@/plugins/youtube',
     '@/plugins/scrollView',
+    { src: '~/plugins/i18n.js' }
 
   ],
 
@@ -39,24 +42,29 @@ export default {
     [
       'nuxt-i18n',
       {
+        seo: true,
         vueI18nLoader: true,
-        defaultLocale: 'de',
+        defaultLocale: 'fr',
         locales: [
           {
             code: 'en',
-            name: 'English'
+            name: 'English',
+            iso: 'en-US'
           },
           {
             code: 'fr',
-            name: 'Français'
+            name: 'Français',
+            iso: 'fr-FR'
           },
           {
             code: 'de',
-            name: 'Deutsch'
+            name: 'Deutsch',
+            iso: 'de-DE'
           },
           {
             code: 'ru',
-            name: 'Русский'
+            name: 'Русский',
+            iso: 'ru-RU'
           }
         ],
         vueI18n: i18n,

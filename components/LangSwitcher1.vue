@@ -5,7 +5,7 @@
       <span> {{ $i18n.locale }} </span>
       <ul class="options">
 
-          <nuxt-link :to="switchLocalePath(locale.code)" :key="locale.code" v-for='locale in availableLocales'>
+          <nuxt-link :to="switchLocalePath(locale.code)" :key="locale.code" v-for='locale in availableLocales' @click="setCookieLang">
             <li class="option" >
               <img :src="require(`@/assets/img/language/${locale.code}.png`)" class="img"/>
               {{ locale.name }}
@@ -25,6 +25,8 @@
 //import {loadLanguageAsync} from '../i18n-setup'
 
 
+
+import Vue from "vue";
 
 export default {
 
@@ -50,6 +52,7 @@ export default {
   props: [
     'refresh'
   ],
+
   computed: {
     availableLocales () {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
@@ -75,6 +78,9 @@ export default {
       // //загрузка скрипта jivoSite с текущим языком
       // this.loadScript(v)
     },
+    setCookieLang() {
+
+    }
     // loadScript(lang) {
     //
     //     //удаление ранее загруженного скрипта если язык не соответствует текущему

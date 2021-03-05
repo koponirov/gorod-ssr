@@ -34,7 +34,7 @@ div.wrapper
 
       div.modal-img
 
-        img(:src="`/files/patents/${banners[country].mp || country}-1.jpg`" v-if="banners[country].mp !== 'waiting'")
+        img(:src="require(`@/assets/img/patents/${banners[country].mp || country}-1.jpg`)" v-if="banners[country].mp !== 'waiting'")
         div.modal-text(v-else)
           p {{ $t('waiting') }}
 
@@ -70,7 +70,7 @@ export default {
         'al': {count: 1, mp: 'epo'},
         'am': {count: 1, mp: 'eapo'},
         'at': {count: 2, mp: 'epo'},
-        'au': {count: 3},
+         'au': {count: 3},
         'az': {count: 1, mp: 'eapo'},
         'ba': {count: 2, mp: 'epo'},
         'be': {count: 2, mp: 'epo'},

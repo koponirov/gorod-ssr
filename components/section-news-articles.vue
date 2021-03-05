@@ -130,13 +130,8 @@ export default {
     },
     changeIdxParent(idx) {
       this.idx = idx
-    }
-  },
-
-  mounted() {
-    const top = this.$refs.a.getBoundingClientRect().top;
-    this.show = top < window.innerHeight;
-    const evl = window.addEventListener("scroll", (_) => {
+    },
+    check() {
       const top = this.$refs.a.getBoundingClientRect().top;
       this.show = top < window.innerHeight;
       if (this.show && (!this.loaded || this.locale !== this.$i18n.locale)) {
@@ -144,7 +139,13 @@ export default {
         this.loaded = true;
         this.locale = this.$i18n.locale;
       }
-    });
+    }
+  },
+
+  mounted() {
+    const top = this.$refs.a.getBoundingClientRect().top;
+    this.show = top < window.innerHeight;
+    const evl = window.addEventListener("scroll", this.check);
     //
     // const app = document.getElementById("app");
     //
@@ -157,5 +158,8 @@ export default {
     //   document.body.style.overflow = "auto";
     // });
   },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.check);
+  }
 };
 </script>
