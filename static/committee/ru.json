@@ -41,20 +41,6 @@
     "country": "ru"
   },
   {
-    "name": "Артем Леонов",
-    "position": "Стартап брокер",
-    "img": "ArtemLeonov",
-    "inst": "https://instagram.com/leonov_artem01 ",
-    "country": "ru"
-  },
-  {
-    "name": "Максим Овтин",
-    "position": "Стартап брокер",
-    "img": "MaximOvtin",
-    "inst": "https://www.instagram.com/ovtin_1",
-    "country": "ru"
-  },
-  {
     "name": "Дионисий Кочконян",
     "position": "Investor",
     "img": "DionisyKochkonyan",
@@ -290,6 +276,13 @@
     "country": "kz"
   },
   {
+    "name": "Наталия Жаркова",
+    "position": "",
+    "img": "ZharkovaNatalia",
+    "vk": "https://vk.com/id73455358",
+    "country": "ru"
+  },
+  {
     "name": "Nguyễn Luân",
     "position": "",
     "img": "NguyenLuan",
@@ -318,55 +311,59 @@
     "country": "in"
   },
   {
-    "name": "Имя Фамилия",
+    "name": "Nguyễn BÁ Tri",
     "position": "",
-    "img": "default",
-    "tel": "",
-    "fb": "",
-    "tw": "",
-    "te": "https://t.me/ENERGY2020_SUPPORT",
-    "inst": "",
-    "wa": "",
-    "crop_description": "",
-    "default": "true"
+    "fb": "https://www.facebook.com/ttri.nguyen.355",
+    "img": "NguyenBaTri",
+    "country": "vn"
   },
   {
-    "name": "Имя Фамилия",
+    "name": "H. Nasrulloh",
     "position": "",
-    "img": "default",
-    "tel": "",
-    "fb": "",
-    "tw": "",
-    "te": "https://t.me/ENERGY2020_SUPPORT",
-    "inst": "",
-    "wa": "",
-    "crop_description": "",
-    "default": "true"
+    "fb": "https://www.facebook.com/profile.php?id=100012422730899",
+    "img": "Nasrulloh",
+    "country": "id"
   },
   {
-    "name": "Имя Фамилия",
+    "name": "Иван Маркин",
     "position": "",
-    "img": "default",
-    "tel": "",
-    "fb": "",
-    "tw": "",
-    "te": "https://t.me/ENERGY2020_SUPPORT",
-    "inst": "",
-    "wa": "",
-    "crop_description": "",
-    "default": "true"
+    "vk": "https://vk.com/ivanmarkin2021",
+    "img": "IvanMarkin",
+    "country": "ru"
   },
   {
-    "name": "Имя Фамилия",
+    "name": "Maragathavel Periyannan",
     "position": "",
-    "img": "default",
-    "tel": "",
-    "fb": "",
-    "tw": "",
-    "te": "https://t.me/ENERGY2020_SUPPORT",
-    "inst": "",
-    "wa": "",
-    "crop_description": "",
-    "default": "true"
+    "te": "https://t.me/VASHANTHAN",
+    "img": "MaragathavelPeriyannan",
+    "country": "in"
+  },
+  {
+    "name": "Icuk Sugianto",
+    "position": "",
+    "inst": "https://www.instagram.com/movic_shazia/?hl=id",
+    "img": "IcukSugianto",
+    "country": "id"
+  },
+  {
+    "name": "Muhammad Adnan",
+    "position": "",
+    "fb": "https://www.facebook.com/profile.php?id=100042222317958",
+    "img": "MuhammadAdnan",
+    "country": "in"
+  },
+  {
+    "name": "Soibam Dhanashyam",
+    "position": "",
+    "fb": "https://www.facebook.com/dssoibam.singh",
+    "img": "SoibamDhanashyam",
+    "country": "in"
+  },
+  {
+    "name": "Иван Ивлев",
+    "position": "",
+    "inst": "https://www.instagram.com/ivlev.official/?hl=ru",
+    "img": "IvanIvlev",
+    "country": "ru"
   }
 ]}

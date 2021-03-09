@@ -81,6 +81,46 @@
       }
     },
     {
+      "name": "Artem Leonov",
+      "position": "Стартап брокер",
+      "avatar": "ArtemLeonov",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://instagram.com/leonov_artem01",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Maxim Ovtin",
+      "position": "Стартап брокер",
+      "avatar": "MaximOvtin",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://www.instagram.com/ovtin_1",
+        "vk": ""
+      }
+    },
+    {
       "name": "Андрей Хоменко",
       "position": "ТОП мастер макетирования",
       "avatar": "AndreyKhomenko",

@@ -81,6 +81,46 @@
       }
     },
     {
+      "name": "Artem Leonov",
+      "position": "Startup broker",
+      "avatar": "ArtemLeonov",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://instagram.com/leonov_artem01",
+        "vk": ""
+      }
+    },
+    {
+      "name": "Maxim Ovtin",
+      "position": "Startup broker",
+      "avatar": "MaximOvtin",
+      "tel": "",
+      "portfolio": {
+        "images": [],
+        "text": ""
+      },
+      "crop_description": "",
+      "description": "",
+      "contacts": {
+        "tel": "",
+        "fb": "",
+        "tw": "",
+        "te": "",
+        "inst": "https://www.instagram.com/ovtin_1",
+        "vk": ""
+      }
+    },
+    {
       "name": "Andrey Khomenko",
       "position": "Model designer",
       "avatar": "AndreyKhomenko",
