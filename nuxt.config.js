@@ -1,4 +1,4 @@
-import i18n from "@/config/i18n";
+import i18n from "./gorod-ssr/config/i18n";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -80,6 +80,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    ["@nuxtjs/svg"],
 
   ],
 
