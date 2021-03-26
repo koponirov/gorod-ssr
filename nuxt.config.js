@@ -30,7 +30,6 @@ export default {
     '@/plugins/youtube',
     '@/plugins/scrollView',
     { src: '~/plugins/i18n.js' }
-
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
