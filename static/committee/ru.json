@@ -169,7 +169,8 @@
     "name": "Anuoluwapo Afoluwashe",
     "position": "Investor",
     "img": "AnuoluwapoAfoluwashe",
-    "inst": "https://www.instagram.com/p/CAsoLVSgkQF2R06Omm3gHqQ7-61-ykz2LKykLo0/?igshid=q9rm3b7hzlz4"
+    "inst": "https://www.instagram.com/p/CAsoLVSgkQF2R06Omm3gHqQ7-61-ykz2LKykLo0/?igshid=q9rm3b7hzlz4",
+    "country": "ng"
   },
   {
     "name": "Henrik Christiansen",
@@ -365,5 +366,96 @@
     "inst": "https://www.instagram.com/ivlev.official/?hl=ru",
     "img": "IvanIvlev",
     "country": "ru"
+  },
+  {
+    "name": "Тaufeek Кhan",
+    "position": "",
+    "fb": "https://www.facebook.com/profile.php?id=100050390573689",
+    "img": "ТaufeekКhan",
+    "country": "in"
+  },
+  {
+    "name": "Мayank Мishra",
+    "position": "",
+    "fb": "https://www.facebook.com/profile.php?id=100022107469281",
+    "img": "МayankМishra",
+    "country": "in"
+  },
+  {
+    "name": "Sung Won Kim",
+    "position": "",
+    "fb": "https://www.facebook.com/swkim.rtbkorea",
+    "img": "SungWonKim",
+    "country": "kr"
+  },
+  {
+    "name": "Guneshwar Sharma Hajarimayum",
+    "position": "",
+    "te": "https://t.me/nitya2017",
+    "img": "GuneshwarSharma",
+    "country": "in"
+  },
+  {
+    "name": "Ganesan Kaveri",
+    "position": "",
+    "fb": "https://www.facebook.com/ganesan.ganesh.733076",
+    "img": "GanesanKaveri",
+    "country": "in"
+  },
+  {
+    "name": "Dominique Ntoutoume",
+    "position": "",
+    "te": "https://t.me/Dominique_WebEntrepreneur",
+    "img": "DominiqueNtoutoume",
+    "country": "gn"
+  },
+  {
+    "name": "Vishal Gurnule",
+    "position": "",
+    "inst": "https://www.instagram.com/Vishal_est/",
+    "img": "VishalGurnule",
+    "country": "in"
+  },
+  {
+    "name": "Stephen Sedemogun",
+    "position": "",
+    "inst": "https://www.instagram.com/Rollarz/",
+    "img": "StephenSedemogun",
+    "country": "ng"
+  },
+  {
+    "name": "Сергей Селезнёв",
+    "position": "",
+    "fb": "https://www.facebook.com/sergey.seleznev.716/",
+    "img": "SergeySeleznev",
+    "country": "ru"
+  },
+  {
+    "name": "Кондратюк Ион",
+    "position": "",
+    "inst": "https://instagram.com/kondratiuc__?igshid=1ereggxhs89a4",
+    "img": "KondratyukIon",
+    "country": "md"
+  },
+  {
+    "name": "Eklavya Vijaykumar Patel",
+    "position": "",
+    "fb": "https://www.facebook.com/wetereklavya",
+    "img": "EklavyaVijaykumar",
+    "country": "in"
+  },
+  {
+    "name": "Ajeet Kumar Jaiswal",
+    "position": "",
+    "fb": "https://www.facebook.com/ajeet.jaiswal.167",
+    "img": "AjeetKumar",
+    "country": "in"
+  },
+  {
+    "name": "Chandra Bhanu Pratap",
+    "position": "",
+    "inst": "https://instagram.com/swamdogmillionaire?r=nametag",
+    "img": "ChandraBhanu",
+    "country": "us"
   }
 ]}

@@ -1,6 +1,7 @@
 <template lang="pug">
   #app
     section-header
+    section-video
     section-top
     section-patents
     section-stream
@@ -15,7 +16,8 @@
 
 <script>
 import SectionHeader from "~~/components/section-header-gorod";
-import SectionTop from "~~/components/section-gorod-levels-test";
+import SectionVideo from "~~/components/section-video";
+import SectionTop from "~~/components/section-gorod-levels";
 import SectionPatents from "~~/components/section-patents";
 import SectionStream from "~~/components/section-stream";
 import SectionNews from "~~/components/section-news";
@@ -30,6 +32,7 @@ import VueCookies from "vue-cookies";
 export default {
   components: {
     SectionHeader,
+    SectionVideo,
     SectionTop,
     SectionPatents,
     SectionStream,
@@ -64,9 +67,12 @@ export default {
     }
 
   },
-  destroyed() {
+  beforeDestroy() {
     console.log('destr')
-    window.jivo_destroy()
+    //window.jivo_destroy()
+  },
+  destroyed() {
+
   }
 
 }
